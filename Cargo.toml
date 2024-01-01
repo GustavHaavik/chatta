@@ -1,0 +1,18 @@
+[package]
+name = "chatapp_backend"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+socketioxide = { version = "0.9.1", features = ["state"] }
+tokio = { version = "1.35.0", features = ["full"] }
+tracing = "0.1.27"
+tracing-subscriber = "*"
+axum = "0.7.3"
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+tower-http = { version = "*", features = ["cors"] }
+tower = "*"
+chrono = { version = "*", features = ["serde"] }
